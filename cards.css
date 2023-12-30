@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem; /** Odstepy między kartami*/
+	border: 1px solid red;
+}
+
+.parent .card {
+	/* flex: 1; */
+	display: flex;
+	flex-direction: column;
+	width: 13rem; /** Szerokość karty */
+	border: 1px solid blue;
+}
+
+.parent .card .card-img img {
+	width: 100%;
+	height: 15rem; /** Wysokosć zdjęcia*/
+}
+
+.parent .card .card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.5rem;
+	height: 100%;
+}
+.parent .card .card-content .card-content-upper {
+	border: 1px solid purple;
+}
+.parent .card .card-content .card-content-lower {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.parent .card .card-content .card-content-lower button {
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
